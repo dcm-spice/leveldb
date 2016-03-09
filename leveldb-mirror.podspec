@@ -28,6 +28,7 @@ Pod::Spec.new do |s|
                      "leveldb/util",
                      "Android.mk"
   s.module_name = "leveldb"
+  s.header_dir = "leveldb"
   header_path = if ENV["POD_DEVELOPMENT"]
                   File.join(File.dirname(__FILE__), "leveldb")
                 else
